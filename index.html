@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>김선경 | Creative Studio</title>
+  <meta name="title" content="김선경 | Creative Studio">
+  <meta name="description" content="AI 비주얼, 캐릭터, 디지털 콘텐츠와 감성 디자인을 탐색하는 김선경의 크리에이티브 포트폴리오">
+  <meta name="keywords" content="김선경, SUNKYUNG KIM, 크리에이티브 스튜디오, AI 아트, 캐릭터 디자인, 디지털 콘텐츠, 포트폴리오, 감성 디자인">
+  <meta name="author" content="김선경 (Sunkyung Kim)">
+  <meta name="theme-color" content="#F8F6FC">
+
+  <!-- Open Graph / SNS -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="김선경 | Creative Studio">
+  <meta property="og:description" content="AI 비주얼, 캐릭터, 디지털 콘텐츠와 감성 디자인을 탐색하는 김선경의 크리에이티브 포트폴리오">
+  <meta property="og:image" content="assets/images/hero-artwork.jpg">
+
+  <!-- Favicon (Lavender Glow SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><radialGradient id='g' cx='35%25' cy='35%25' r='65%25'><stop offset='0%25' stop-color='%23FFFFFF'/><stop offset='45%25' stop-color='%23C8B8F0'/><stop offset='100%25' stop-color='%238C78C6'/></radialGradient></defs><circle cx='50' cy='50' r='46' fill='url(%23g)'/><circle cx='50' cy='50' r='38' fill='none' stroke='white' stroke-width='3' opacity='0.7'/><path d='M50 20 L53 38 L71 41 L53 44 L50 62 L47 44 L29 41 L47 38 Z' fill='white'/></svg>">
+
+  <!-- Web Fonts (Pretendard & Google Fonts) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Standalone Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glow Canvas Orbs -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+
+  <!-- 1. Header — 브랜드 내비게이션 -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-link" aria-label="김선경 홈으로 이동">
+        <span class="brand-title">SUNKYUNG KIM</span>
+        <span class="brand-subtitle">CREATIVE STUDIO</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="메인 내비게이션">
+        <a href="#home" class="nav-link active" data-section="home">HOME</a>
+        <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+        <a href="#explore" class="nav-link" data-section="explore">EXPLORE</a>
+        <a href="#works" class="nav-link" data-section="works">WORKS</a>
+        <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+      </nav>
+
+      <button id="menu-toggle-btn" class="menu-toggle-btn" aria-label="메뉴 열기/닫기" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="모바일 내비게이션" role="region">
+      <a href="#home" class="mobile-nav-link" data-section="home">
+        <span>HOME</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+      <a href="#about" class="mobile-nav-link" data-section="about">
+        <span>ABOUT</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+      <a href="#explore" class="mobile-nav-link" data-section="explore">
+        <span>EXPLORE</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+      <a href="#works" class="mobile-nav-link" data-section="works">
+        <span>WORKS</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+      <a href="#contact" class="mobile-nav-link" data-section="contact">
+        <span>CONTACT</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- 2. Hero — 첫 화면 -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <svg class="hero-badge-sparkle" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+            </svg>
+            <span>MY CREATIVE UNIVERSE</span>
+          </div>
+
+          <h1 class="hero-title">
+            상상에 감성을 더해,<br/>
+            나만의 세계를 만들다.
+          </h1>
+
+          <p class="hero-subtitle-en">
+            Where Imagination Becomes Creation.
+          </p>
+
+          <p class="hero-description">
+            AI 비주얼부터 캐릭터, 디지털 콘텐츠까지.<br/>
+            작은 영감을 나만의 감각으로 표현합니다.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#works" class="btn btn-primary" id="hero-btn-works">
+              <span>EXPLORE MY WORKS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary" id="hero-btn-about">
+              <span>ABOUT ME</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper reveal-on-scroll delay-200">
+          <div class="hero-glow-aura glow-pulse" aria-hidden="true"></div>
+          <div class="hero-artwork-card float-animation">
+            <img 
+              src="assets/images/hero-artwork.jpg" 
+              alt="김선경 크리에이티브 스튜디오 대표 아트워크 - 라벤더빛 몽환적 디지털 오브젝트" 
+              class="hero-artwork-img"
+              width="460"
+              height="460"
+            />
+            <div class="hero-floating-tag">
+              <span class="tag-indicator" aria-hidden="true"></span>
+              <span>CREATIVE VISUAL LAB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About — 김선경 소개 -->
+    <section class="section-wrapper about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span class="section-label-dot"></span>
+            <span>ABOUT THE CREATOR</span>
+          </div>
+          <h2 class="section-title">
+            감각적인 아이디어를<br/>나만의 방식으로 표현합니다.
+          </h2>
+        </div>
+
+        <div class="about-narrative-box reveal-on-scroll delay-100">
+          <p class="about-intro-p">안녕하세요, 김선경입니다.</p>
+          <p class="about-intro-p">저는 일상 속에서 발견한 작은 영감과 새로운 아이디어를 감각적인 콘텐츠와 디자인으로 표현합니다.</p>
+          <p class="about-intro-p">AI 이미지와 캐릭터, 디지털 콘텐츠, 라이프스타일 디자인 등 다양한 분야를 탐색하며 머릿속의 아이디어를 실제 결과물로 발전시키고 있습니다.</p>
+          <p class="about-intro-p">저에게 창작은 단순히 아름다운 것을 만드는 일이 아닙니다. 익숙한 것에 새로운 시선을 더하고, 감성과 실용성을 연결하며, 사람들에게 새로운 영감을 전달하는 과정입니다.</p>
+          <p class="about-intro-p">앞으로도 다양한 시도와 실험을 통해 저만의 창작 세계를 확장해 나가고 싶습니다.</p>
+        </div>
+
+        <div class="about-cards-grid">
+          <div class="studio-card about-feature-card reveal-on-scroll delay-100">
+            <div class="about-card-badge">
+              <span class="about-card-number">CARD 01</span>
+              <span class="about-card-tag">IMAGINATION</span>
+            </div>
+            <h3 class="about-card-title">새로운 시선</h3>
+            <p class="about-card-desc">일상에서 영감을 발견하고 새로운 아이디어를 시각적으로 표현합니다.</p>
+          </div>
+
+          <div class="studio-card about-feature-card reveal-on-scroll delay-200">
+            <div class="about-card-badge">
+              <span class="about-card-number">CARD 02</span>
+              <span class="about-card-tag">CREATION</span>
+            </div>
+            <h3 class="about-card-title">직접 만드는 즐거움</h3>
+            <p class="about-card-desc">다양한 도구와 기술을 활용해 아이디어를 실제 결과물로 구현합니다.</p>
+          </div>
+
+          <div class="studio-card about-feature-card reveal-on-scroll delay-300">
+            <div class="about-card-badge">
+              <span class="about-card-number">CARD 03</span>
+              <span class="about-card-tag">EXPLORATION</span>
+            </div>
+            <h3 class="about-card-title">끝없는 탐색</h3>
+            <p class="about-card-desc">새로운 분야와 표현 방식을 배우며 창작의 가능성을 넓혀 갑니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Creative Fields — 창작 분야 -->
+    <section class="section-wrapper" id="explore">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span class="section-label-dot"></span>
+            <span>WHAT I EXPLORE</span>
+          </div>
+          <h2 class="section-title">
+            다양한 영감이 만나는 곳
+          </h2>
+          <p class="section-subtitle">
+            확정된 사업 실적이 아닌, 감성과 호기심으로 넓혀가는 창작의 관심사와 탐색 영역입니다.
+          </p>
+        </div>
+
+        <div class="fields-grid">
+          <!-- 01. AI VISUAL -->
+          <div class="field-card reveal-on-scroll delay-100">
+            <div class="field-card-header">
+              <span class="field-number">01</span>
+              <div class="field-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m4.93 4.93 4.24 4.24"></path>
+                  <path d="m14.83 9.17 4.24-4.24"></path>
+                  <path d="m14.83 14.83 4.24 4.24"></path>
+                  <path d="m9.17 14.83-4.24 4.24"></path>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="field-category">AI VISUAL</div>
+            <h3 class="field-title">AI 이미지 & 감각적 비주얼</h3>
+            <p class="field-desc">AI 이미지, 감각적인 비주얼, 디지털 아트, 캐릭터 디자인에 대한 탐색.</p>
+            <div class="field-tags">
+              <span class="field-tag-pill">AI Prompt Crafting</span>
+              <span class="field-tag-pill">Digital Art Composition</span>
+              <span class="field-tag-pill">Visual Mood Experiment</span>
+            </div>
+          </div>
+
+          <!-- 02. CHARACTER & STORY -->
+          <div class="field-card reveal-on-scroll delay-200">
+            <div class="field-card-header">
+              <span class="field-number">02</span>
+              <div class="field-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"></path>
+                  <path d="M2 20a10 10 0 0 1 20 0"></path>
+                  <circle cx="9" cy="8" r="1" fill="currentColor"></circle>
+                  <circle cx="15" cy="8" r="1" fill="currentColor"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="field-category">CHARACTER & STORY</div>
+            <h3 class="field-title">캐릭터 & 시각적 스토리텔링</h3>
+            <p class="field-desc">캐릭터를 활용한 콘텐츠와 개성 있는 시각적 스토리텔링.</p>
+            <div class="field-tags">
+              <span class="field-tag-pill">Character Persona</span>
+              <span class="field-tag-pill">Emotive Visuals</span>
+              <span class="field-tag-pill">Worldbuilding Concept</span>
+            </div>
+          </div>
+
+          <!-- 03. DIGITAL CONTENT -->
+          <div class="field-card reveal-on-scroll delay-300">
+            <div class="field-card-header">
+              <span class="field-number">03</span>
+              <div class="field-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="field-category">DIGITAL CONTENT</div>
+            <h3 class="field-title">숏폼 & 디지털 콘텐츠 기획</h3>
+            <p class="field-desc">유튜브 쇼츠, SNS 콘텐츠, 숏폼 영상 아이디어와 구성 기획.</p>
+            <div class="field-tags">
+              <span class="field-tag-pill">Short-form Direction</span>
+              <span class="field-tag-pill">Pacing & Mood</span>
+              <span class="field-tag-pill">Visual Hook Planning</span>
+            </div>
+          </div>
+
+          <!-- 04. LIFESTYLE & DESIGN -->
+          <div class="field-card reveal-on-scroll delay-400">
+            <div class="field-card-header">
+              <span class="field-number">04</span>
+              <div class="field-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                  <path d="M19 3v4"></path>
+                  <path d="M21 5h-4"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="field-category">LIFESTYLE & DESIGN</div>
+            <h3 class="field-title">라이프스타일 & 디자인 아이디어</h3>
+            <p class="field-desc">생활용품 콘텐츠, 일상 속 디자인, 실용성과 감성을 연결하는 아이디어.</p>
+            <div class="field-tags">
+              <span class="field-tag-pill">Object Aesthetics</span>
+              <span class="field-tag-pill">Sensible Curation</span>
+              <span class="field-tag-pill">Harmonious Daily Life</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Selected Works — 포트폴리오 갤러리 -->
+    <section class="section-wrapper" id="works">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span class="section-label-dot"></span>
+            <span>SELECTED WORKS</span>
+          </div>
+          <h2 class="section-title">
+            상상이 작품이 되는 순간
+          </h2>
+          <p class="section-subtitle">
+            다양한 아이디어를 시각적으로 탐색하고 표현하는 창작 기록입니다.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-bar reveal-on-scroll" role="toolbar" aria-label="프로젝트 카테고리 필터">
+          <button class="filter-btn active" data-category="ALL" type="button">ALL WORKS</button>
+          <button class="filter-btn" data-category="AI ART" type="button">AI ART</button>
+          <button class="filter-btn" data-category="CHARACTER" type="button">CHARACTER</button>
+          <button class="filter-btn" data-category="SHORT-FORM" type="button">SHORT-FORM</button>
+          <button class="filter-btn" data-category="LIFESTYLE" type="button">LIFESTYLE</button>
+          <button class="filter-btn" data-category="CREATIVE EXPERIMENT" type="button">EXPERIMENT</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Creative Philosophy — 창작 철학 -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="container philosophy-container reveal-on-scroll">
+        <div class="philosophy-sparkle-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+          </svg>
+        </div>
+
+        <blockquote class="philosophy-quote-ko">
+          "좋은 아이디어는<br/>
+          감성에서 시작되고,<br/>
+          나만의 표현을 통해 완성됩니다."
+        </blockquote>
+
+        <p class="philosophy-quote-en">
+          "Create with feeling. Express with purpose."
+        </p>
+
+        <div class="philosophy-signature">
+          SUNKYUNG KIM — CREATIVE STUDIO
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact — 함께 만드는 새로운 가능성 -->
+    <section class="section-wrapper contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span class="section-label-dot"></span>
+            <span>LET'S CONNECT</span>
+          </div>
+          <h2 class="section-title">
+            새로운 아이디어를 함께 나눠요.
+          </h2>
+        </div>
+
+        <div class="contact-card reveal-on-scroll delay-100">
+          <div class="contact-status-chip">
+            <span class="contact-status-dot" aria-hidden="true"></span>
+            <span>창작 제안 및 협업 문의 열려있음</span>
+          </div>
+
+          <p class="contact-desc">
+            콘텐츠와 창작에 관한 이야기, 새로운 프로젝트 제안, 협업 문의를 환영합니다.<br/>
+            작은 아이디어가 새로운 가능성으로 이어질 수 있도록 다양한 연결을 기다립니다.
+          </p>
+
+          <div class="contact-buttons-group">
+            <a href="mailto:sunkyung.studio@gmail.com" class="btn btn-primary" id="contact-email-btn" aria-label="이메일 문의 보내기">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>SEND AN EMAIL</span>
+            </a>
+
+            <button type="button" class="btn btn-secondary" id="copy-email-btn" title="이메일 주소 복사" aria-label="이메일 주소 클립보드 복사">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="copy-btn-text">주소 복사 (sunkyung.studio@gmail.com)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. Footer — 브랜드 마무리 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-box">
+          <span class="footer-brand-title">SUNKYUNG KIM</span>
+          <span class="footer-brand-slogan">Where Imagination Becomes Creation.</span>
+        </div>
+
+        <nav class="footer-nav" aria-label="푸터 내비게이션">
+          <a href="#home" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#explore" class="footer-nav-link">Explore</a>
+          <a href="#works" class="footer-nav-link">Works</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          © <span id="footer-year">2026</span> SUNKYUNG KIM (김선경). All rights reserved.
+        </div>
+
+        <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="페이지 맨 위로 이동">
+          <span>BACK TO TOP</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal Dialog -->
+  <div class="modal-overlay" id="project-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box" id="project-modal-box" tabindex="-1">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="모달 닫기">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-image-container">
+        <img src="" alt="" class="modal-image" id="modal-image" />
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <span class="modal-category-pill" id="modal-category"></span>
+          <span class="modal-status-pill" id="modal-status"></span>
+          <span class="project-year" id="modal-year"></span>
+        </div>
+
+        <h3 class="modal-title" id="modal-title"></h3>
+        <p class="modal-desc" id="modal-desc"></p>
+
+        <div class="modal-tools-section">
+          <div class="modal-section-heading">EXPLORATION TOOLS & MEDIUM</div>
+          <div class="modal-tools-list" id="modal-tools"></div>
+        </div>
+
+        <div class="modal-note-box" id="modal-note"></div>
+
+        <div id="modal-link-container" style="margin-top: 24px; display: none;">
+          <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-link-btn">
+            <span>관련 링크 보기</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client-side Standalone Scripts (Zero Build / Works on double-click file://) -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
